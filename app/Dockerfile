@@ -6,14 +6,12 @@ WORKDIR /home/node/app
 
 COPY package*.json ./
 
-USER node
-
 ENV NODE_ENV 'production'
 
 RUN npm install
 
 COPY --chown=node:node server/ server/
 
-ENV NODE_PORT=${NODE_PORT:-'3000'}
+ENV NODE_PORT=${NODE_PORT:-'80'}
 
 CMD ["npm", "run", "start"]
