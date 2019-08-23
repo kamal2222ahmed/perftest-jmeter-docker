@@ -29,7 +29,7 @@
 ### Running JMeter in Non GUI Mode
 
 - `cd jmeter`
-- `docker run -it --name jmeter -v ${PWD}:${PWD} -w ${PWD} --network app_network a6kme/jmeter -n -e -o -t ${PWD}/TestLoadOnApps.jmx ${PWD}/reports  -l ${PWD}/TestResult.jtl`
+- `docker run -it --name jmeter -v ${PWD}:${PWD} -w ${PWD} --network app_network a6kme/jmeter -n -e -t ${PWD}/TestLoadOnApps.jmx -o ${PWD}/reports  -l ${PWD}/TestResult.jtl`
 
 You will find the reports in jmeter/reports directory
 
