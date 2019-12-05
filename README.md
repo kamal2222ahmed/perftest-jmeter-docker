@@ -14,7 +14,7 @@
 
 ### Create a bridge network app_network
 
-- `docker create network app_network`
+- `docker network create app_network`
 
 ## Running
 
