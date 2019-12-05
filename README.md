@@ -1,4 +1,5 @@
 # Experiment to demonstrate throughput increase on horizontal scale
+ref Article: https://a6k.me/articles/performance-test-a-service-with-jmeter-and-scale-with-docker/
 
 ## Tools used
 
